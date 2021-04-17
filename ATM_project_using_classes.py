@@ -319,7 +319,7 @@ class budget:
         enterUserName = input(
             "Please enter your username to confirm if user exist\n")
 
-        for accountNumber, user in database.items():
+        for email, user in database.items():
 
             if (enterUserName != user[2]):
                 print("User does not exist")
@@ -328,7 +328,7 @@ class budget:
                 break
 
             else:
-                print("Your account number is", accountNumber)
+                print("Your email is", email)
                 print("Your password is ", user[4])
                 time.sleep(5)
                 print("going back to login page...")
